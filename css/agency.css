@@ -25,13 +25,15 @@ p {
 
 .image {
   opacity: 0.8;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .image:hover {
   /* IE 9 */
   -webkit-transform: scale(1.15);
   /* Safari 3-8 */
-  transform: all ease scale(1.15);
+  transform: scale(1.15);
   -webkit-box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 1;
@@ -41,7 +43,7 @@ p {
   /* IE 9 */
   -webkit-transform: scale(1);
   /* Safari 3-8 */
-  transform: all ease scale(1);
+  transform: scale(1);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -49,15 +51,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: orange;
 }
 
 a:hover {
-  color: #fec503;
+  color: #cc8400;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: orange !important;
 }
 
 h1,
@@ -103,19 +105,30 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 2.5px;
 }
 
+style
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
-  color: white;
+  background-color: white !important;
+  border-color: transparent !important;
+  color: black !important;
 }
 
-.btn-primary:active, .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+.btn-secondary {
+  background-color: transparent;
+  border-color: orange;
+  border-width: 2.5px;
+  color: orange;
+}
+
+style
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: orange !important;
+  border-color: transparent !important;
+  color: white !important;
 }
 
 .btn-source {
@@ -137,12 +150,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: orange;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: orange;
   text-shadow: none;
 }
 
@@ -169,17 +182,17 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: orange;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: orange;
   font-family: 'Montserrat';
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #cc8400;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -192,7 +205,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: orange;
 }
 
 @media (min-width: 992px) {
@@ -293,10 +306,10 @@ header.masthead .intro-text .intro-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(255, 165, 0, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -498,7 +511,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: orange;
 }
 
 .timeline > li .timeline-image h4 {
@@ -660,8 +673,8 @@ section#contact a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   color: #212529;
   border-radius: 100%;
   outline: none;
@@ -669,7 +682,8 @@ section#contact a {
 }
 
 section#contact a:active, section#contact a:focus, section#contact a:hover {
-  background-color: #bfbfbf;
+  background-color: orange;
+  color: white;
 }
 
 section#contact .form-group {
@@ -690,7 +704,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: orange;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -758,5 +772,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: orange;
 }

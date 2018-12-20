@@ -17,9 +17,9 @@ section#contact {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
     color: $gray-900;
     border-radius: 100%;
     outline: none;
@@ -27,7 +27,9 @@ section#contact {
     &:active,
     &:focus,
     &:hover {
-      background-color: darken(white, 25%);
+      background-color: orange;
+      color: white;
+
     }
   }
 
